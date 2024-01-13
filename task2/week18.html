@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Планер</title>
+		<link rel="stylesheet" href="assets/style.css" />
+		<link rel="stylesheet" href="assets/skeleton.css" />
+		<link rel="stylesheet" href="assets/normalize.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<h2><a>Планер</a></h2>
+			<p class="text-orange"></p>
+
+			<section>
+				<h4>Добавить задачу</h4>
+				<form>
+					<input type="text" id="taskInput" placeholder="Задача" />
+				<button class="button button__add">Добавить</button>
+			</form>				
+			</section>
+
+			<section>
+				<h4>Список задач</h4>
+				<div>
+					<ul id="listOfTasks"></ul>
+					<li class="item" data-key="1594003133171">
+						<input class="checkbox" type="checkbox">
+						Go to Gym
+						<button class="delete-button">X</button>
+					  </li>
+				</div>
+				<button class="button button__delete">Очистить список задач</button>
+			</section>
+		</div>
+
+		<script src="./week18.js"></script>
+	</body>
+</html>
